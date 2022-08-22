@@ -1,8 +1,8 @@
 <div class="root">
   <nav class="navbar">
     <div class="container-fluid">
-      <div class="content">
-        <i class="fa fa-sticky-note fa-flip-horizontal mr-2"></i>
+      <div class="content" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+        <i [class]="class"></i>
         <div>
           <span>Gerenciador de Figurinhas</span>
           <br>
