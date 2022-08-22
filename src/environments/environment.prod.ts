@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  WHATSAPP_API: 'https://api.whatsapp.com/',
 };

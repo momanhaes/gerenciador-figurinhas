@@ -1,0 +1,24 @@
+@import "/src/app/scss/includes.scss";
+
+.root {
+  @include grid(32);
+
+  .container {
+    @include grid-column-span(32);
+    margin-bottom: 32px;
+    margin-top: 32px;
+
+    .content {
+      @include center;
+      font-size: 12px;
+
+      @include large-and-up {
+        font-size: 16px;
+      }
+
+      span {
+        margin: 0 4px 0 4px;
+      }
+    }
+  }
+}

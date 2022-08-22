@@ -1,1 +1,113 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/theming";
+@import "app/scss/includes.scss";
+@include mat-core();
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+label,
+pre,
+blockquote,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
+  color: $color-text !important;
+  font-family: $font-montserrat !important;
+}
+
+p {
+  font-family: $font-montserrat !important;
+  color: $color-text !important;
+  line-height: 1.25;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  background-color: $color-background !important;
+  font-family: $font-montserrat !important;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  line-height: 1.25;
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+}
+
+img {
+  vertical-align: baseline;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+::selection {
+  background: $color-primary;
+  color: $color-white;
+}
+
+a {
+  color: $color-text !important;
+  text-decoration: none !important;
+  transition: transform 0.1s;
+  transform: scale(1);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.spinner-center-page {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.swal2-title {
+  color: $color-text !important;
+}
+
+.swal2-html-container {
+  color: $color-text !important;
+}
+
+.swal2-popup .swal2-styled {
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.mat-form-field-wrapper {
+  margin-bottom: -1rem !important;
+}
+
+.mat-input-invalid .mat-input-placeholder {
+  color: $color-error;
+}
+
+.mat-input-invalid .mat-input-ripple {
+  background-color: $color-error;
+}
+
+.tooltip-primary {
+  @include z-index("universe");
+  color: $color-white !important;
+  background: $color-primary !important;
+}

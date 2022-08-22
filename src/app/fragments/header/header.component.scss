@@ -1,0 +1,45 @@
+@import "/src/app/scss/includes.scss";
+
+.root {
+  nav {
+    @include z-index("space");
+    background: $color-background;
+    box-shadow: 0 1px 15px $color-shadow;
+    height: 70px;
+
+    .content {
+      @include start;
+      cursor: default;
+
+      transition: transform 0.2s;
+      transform: scale(1);
+
+      @include large-and-up {
+        &:hover {
+          transform: scale(1.1);
+          @include z-index("sky");
+        }
+      }
+    }
+
+    a {
+      color: $color-text;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: default;
+    }
+
+    i {
+      font-size: 42px;
+    }
+
+    span {
+      font-size: 13px;
+
+      &:first-child {
+        font-size: 16px;
+      }
+    }
+  }
+}
