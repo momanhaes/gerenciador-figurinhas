@@ -1,0 +1,64 @@
+<form
+  class="form login mb-4"
+  (keydown.enter)="doLogin()"
+  [formGroup]="loginForm"
+  (submit)="doLogin()">
+
+  <div [@appeard]="state" class="logo" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+    <i [class]="logoClass"></i>
+    <div>
+      <span>Gerenciador de Figurinhas</span>
+      <br>
+      <span>Álbum da Copa do Mundo 2022</span>
+    </div>
+  </div>
+
+  <div [@appeard]="state" class="row">
+    <div class="col-12">
+      <app-input
+        [form]="loginForm"
+        label="E-mail"
+        placeholder="Digite seu e-mail"
+        [required]="true"
+        control="email"
+        type="text">
+      </app-input>
+    </div>
+
+    <div class="col-12">
+      <app-input
+        [form]="loginForm"
+        label="Senha"
+        placeholder="Digite sua senha"
+        [required]="true"
+        control="password"
+        type="password">
+      </app-input>
+    </div>
+  </div>
+
+  <div [@appeard]="state" class="buttons mt-3" [class.loading]="isLoading">
+    <a *ngIf="!isLoading" class="signin" [class.loading]="isLoading" (click)="goRegister()">
+      <i class="fa fa-user-plus mr-2"></i>
+      Cadastre-se
+    </a>
+
+    <button 
+      type="submit"
+      value="Acessar" 
+      class="form-submit"
+      *ngIf="!isLoading"
+      [disabled]="loginForm.invalid || isLoading">
+
+      <i class="fa fa-sign-in mr-2"></i>
+      Acessar
+    </button>
+
+    <app-spinner 
+      [size]="1.3"
+      class="loading"
+      *ngIf="isLoading" 
+      label="Carregando..."> 
+    </app-spinner>
+  </div>
+</form>

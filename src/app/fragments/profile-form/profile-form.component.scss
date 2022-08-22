@@ -1,0 +1,121 @@
+@import "../../scss/includes.scss";
+
+.root {
+  @include grid(32);
+
+  .container-root {
+    @include grid-column-span(32);
+    padding: 5rem 0 0 0;
+
+    .card-header {
+      @include center;
+      flex-wrap: wrap;
+      background-color: $color-background !important;
+
+      @include large-and-up {
+        padding: 1.5rem 1rem 1.5rem 1rem;
+      }
+
+      span {
+        font-size: 1rem;
+
+        @include large-and-down {
+          text-align: center;
+        }
+      }
+
+      @include large-and-up {
+        @include start;
+      }
+    }
+
+    .profile {
+      font-size: 2rem;
+      transform: scale(1);
+      transition: transform 0.2s;
+
+      @include large-and-down {
+        margin-bottom: 1.5rem;
+      }
+
+      @include large-and-up {
+        font-size: 2rem;
+        margin-right: 1rem;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    h5 {
+      font-weight: bold;
+    }
+
+    .card-primary {
+      background: $color-background;
+      box-shadow: 2px 4px 8px 0 $color-shadow;
+    }
+
+    .buttons {
+      @include start;
+      flex-wrap: wrap;
+
+      @media (max-width: 767px) {
+        @include between;
+      }
+
+      @media (max-width: 377px) {
+        @include center;
+      }
+
+      .button {
+        border: 0;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 5px;
+        color: $color-white;
+        padding: 0.5rem 2rem;
+        background-color: $color-primary;
+        transition: background-color 0.2s, color 0.2s;
+
+        &.cancel {
+          background-color: $color-danger;
+
+          @media (max-width: 377px) {
+            margin-top: 0.5rem;
+          }
+
+          @media (min-width: $breakpoint-medium) {
+            margin-left: 1rem;
+          }
+
+          &:hover {
+            background-color: $color-danger-hover;
+            color: $color-white;
+          }
+        }
+
+        &:hover {
+          background-color: $color-primary-hover;
+          color: $color-white;
+        }
+
+        &:disabled {
+          cursor: no-drop;
+          opacity: 0.5;
+        }
+
+        @include large-and-up {
+          padding: 0.7rem 2rem;
+        }
+      }
+    }
+
+    .custom-control-input:checked ~ .custom-control-label::before {
+      border-color: $color-primary !important;
+      background-color: $color-primary !important;
+    }
+  }
+}

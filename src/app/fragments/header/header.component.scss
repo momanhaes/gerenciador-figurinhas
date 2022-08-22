@@ -20,25 +20,22 @@
           @include z-index("sky");
         }
       }
-    }
 
-    a {
-      color: $color-text;
-      font-size: 1rem;
-      font-weight: bold;
-      text-decoration: none;
-      cursor: default;
+      div {
+        line-height: 1.3;
+      }
     }
 
     i {
-      font-size: 42px;
+      font-size: 36px;
+      color: $color-primary;
     }
 
     span {
-      font-size: 13px;
+      font-size: 12px;
 
       &:first-child {
-        font-size: 16px;
+        font-size: 14px;
       }
     }
   }

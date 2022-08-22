@@ -1,0 +1,9 @@
+@import "/src/app/scss/includes.scss";
+
+.root {
+  @include grid(32);
+
+  .container-root {
+    @include grid-column-span(32);
+  }
+}

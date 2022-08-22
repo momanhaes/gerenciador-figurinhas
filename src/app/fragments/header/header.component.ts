@@ -11,14 +11,14 @@ export class HeaderComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.class = 'fa fa-sticky-note fa-flip-horizontal mr-2';
-  }
-
-  public mouseEnter() {
     this.class = 'fa fa-sticky-note-o fa-flip-horizontal mr-2';
   }
 
-  public mouseLeave() {
+  mouseEnter() {
     this.class = 'fa fa-sticky-note fa-flip-horizontal mr-2';
+  }
+
+  mouseLeave() {
+    this.class = 'fa fa-sticky-note-o fa-flip-horizontal mr-2';
   }
 }

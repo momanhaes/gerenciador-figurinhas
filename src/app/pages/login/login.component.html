@@ -1,3 +1,21 @@
-<p>
-  login works!
-</p>
+<div class="root">
+  <div class="container-root">
+    <div class="container">
+      <app-login-form
+        *ngIf="isLogin"
+        [loginForm]="loginForm"
+        [isLoading]="isLoading"
+        (register)="goRegister()"
+        (login)="login()">
+      </app-login-form>
+
+      <app-register-form
+        *ngIf="!isLogin"
+        [registerForm]="registerForm"
+        [isLoading]="isLoading"
+        (login)="goLogin()"
+        (register)="register()">
+      </app-register-form>
+    </div>
+  </div>
+</div>

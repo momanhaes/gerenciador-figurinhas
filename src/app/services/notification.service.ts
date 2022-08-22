@@ -17,7 +17,7 @@ export class NotificationService {
   public showModal(
     title: string,
     text: string,
-    icon: 'error' | 'success',
+    icon: 'error' | 'success' | 'warning',
     confirmButtonText: string,
     hasRoute: boolean = false,
     route?: string

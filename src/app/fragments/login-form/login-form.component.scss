@@ -1,0 +1,106 @@
+@import "../../scss/includes.scss";
+
+.form {
+  margin: auto;
+  max-width: 500px;
+  border-radius: 8px;
+  opacity: 1 !important;
+  padding: 2rem;
+  background: $color-background;
+  box-shadow: 2px 4px 8px 0 $color-shadow;
+
+  .logo {
+    @include center;
+    cursor: default;
+    margin-bottom: 2rem;
+
+    transition: transform 0.2s;
+    transform: scale(1);
+
+    @include large-and-up {
+      &:hover {
+        transform: scale(1.1);
+        @include z-index("sky");
+      }
+    }
+
+    div {
+      line-height: 1.5;
+    }
+
+    i {
+      font-size: 42px;
+      color: $color-primary;
+    }
+
+    span {
+      font-size: 14px;
+
+      &:first-child {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &.login {
+    margin-top: 13vh;
+  }
+}
+
+.form-submit {
+  border: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: $color-white;
+  padding: 0.5rem 2rem;
+  background-color: $color-primary;
+  transition: background-color 0.2s, color 0.2s;
+
+  &:hover {
+    background-color: $color-primary-hover;
+    color: $color-white;
+  }
+
+  &:disabled {
+    cursor: no-drop;
+    opacity: 0.5;
+  }
+
+  @include large-and-up {
+    padding: 0.7rem 2rem;
+  }
+}
+
+.signin {
+  color: $color-primary !important;
+  font-size: 1.1rem;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-primary-hover !important;
+  }
+
+  @media (max-width: 382px) {
+    margin-bottom: 8px;
+  }
+
+  &.loading {
+    @media (max-width: 343px) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.buttons {
+  @include between;
+  flex-wrap: wrap;
+
+  @media (max-width: 382px) {
+    @include center;
+  }
+
+  &.loading {
+    @include center;
+  }
+}
