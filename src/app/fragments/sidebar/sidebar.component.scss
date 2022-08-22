@@ -1,4 +1,4 @@
-@import "../../scss/includes.scss";
+@import "/src/app/scss/includes.scss";
 
 .main-menu {
   background: $color-background;
@@ -84,8 +84,7 @@ nav.main-menu.expanded {
 .text-highlight {
   i,
   span {
-    color: $color-secondary !important;
-    font-weight: bold;
+    color: $color-white !important;
   }
 }
 
@@ -114,8 +113,7 @@ nav.main-menu li.active > a,
 .no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
 .dashboard-page nav.dashboard-menu ul li.active a {
   background-color: $color-primary;
-  color: $color-secondary !important;
-  font-weight: bold;
+  color: $color-white !important;
 }
 
 .fa-2x {

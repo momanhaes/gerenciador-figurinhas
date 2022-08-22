@@ -1,5 +1,5 @@
-<div class="root">
-  <nav class="navbar">
+<div class="root" *ngIf="isMobile || scrolled">
+  <nav class="navbar" [@slide]="state">
     <div class="container-fluid">
       <div class="content" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
         <i [class]="class"></i>
