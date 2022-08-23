@@ -1,5 +1,135 @@
 @import "/src/app/scss/includes.scss";
 
 .root {
-  padding: 5rem 0 0 0;
+  @include grid(32);
+
+  .container {
+    @include grid-column-span(32);
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+
+    .disclaimer {
+      margin-top: 3rem;
+
+      @include large-and-down {
+        text-align: center;
+        margin-top: 2rem;
+      }
+    }
+
+    .group {
+      margin: 1rem 0;
+
+      &:first-child {
+        margin: 0 0 1rem 0;
+      }
+
+      span {
+        font-size: 1rem;
+      }
+    }
+
+    .stickers {
+      margin-top: 0rem;
+
+      .sticker {
+        margin: 0 0 1rem 0;
+      }
+
+      mat-accordion {
+        width: 100%;
+        margin-top: 0.5rem;
+      }
+
+      mat-panel-title {
+        img {
+          width: 18px;
+          height: 18px;
+          margin-right: 8px;
+        }
+        
+        i {
+          color: $color-primary !important;
+        }
+
+        span {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .section {
+      @include between;
+      cursor: pointer;
+      background-color: $color-primary;
+      color: $color-white !important;
+      font-weight: 600;
+      margin-bottom: 4px;
+      margin-top: 8px;
+      padding: 1rem;
+      width: 100%;
+
+      span {
+        font-size: 1rem;
+      }
+    }
+
+    .content {
+      border: 0px;
+      padding: 64px;
+      border-radius: 0.8rem;
+      margin: 24px 0 24px 0;
+      box-shadow: 2px 4px 8px 0 $color-shadow;
+
+      @include large-and-down {
+        padding: 32px;
+      }
+
+      .core {
+        @include between;
+        @include large-and-down {
+          display: block;
+          text-align: center;
+        }
+
+        .text {
+          text-decoration: none;
+
+          p {
+            @include large-and-down {
+              margin-bottom: 24px;
+            }
+          }
+        }
+
+        .input {
+          width: 40%;
+          display: flex;
+          align-items: center;
+
+          @include large-and-down {
+            width: 100%;
+          }
+
+          i {
+            font-size: 21px;
+            color: $color-primary !important;
+          }
+        }
+
+        app-input {
+          width: 100%;
+        }
+      }
+
+      .loading {
+        @include center;
+        margin-top: 16px;
+      }
+
+      i {
+        font-size: 18px;
+      }
+    }
+  }
 }

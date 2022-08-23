@@ -28,6 +28,7 @@ export class InputComponent implements OnInit, AfterViewInit {
   @Input() required: boolean;
   @Input() disabled: boolean;
   @Input() type!: string;
+  @Input() isSearch: boolean = false;
 
   constructor(private cdr: ChangeDetectorRef) {
     this.isRequiredError = false;

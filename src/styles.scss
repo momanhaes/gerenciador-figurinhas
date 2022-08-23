@@ -1,6 +1,21 @@
-@import "~@angular/material/theming";
 @import "app/scss/includes.scss";
+@import "~@angular/material/theming";
 @include mat-core();
+
+$gerenciador-primary: mat-palette($mat-indigo);
+$gerenciador-accent: mat-palette($mat-pink, A200, A100, A400);
+$gerenciador-warn: mat-palette($mat-red);
+$gerenciador-theme: mat-light-theme(
+  (
+    color: (
+      primary: $gerenciador-primary,
+      accent: $gerenciador-accent,
+      warn: $gerenciador-warn,
+    ),
+  )
+);
+
+@include angular-material-theme($gerenciador-theme);
 
 *,
 *:before,
@@ -74,6 +89,10 @@ a {
   }
 }
 
+.color-primary {
+  color: $color-primary !important;
+}
+
 .spinner-center-page {
   position: absolute;
   left: 50%;
@@ -106,8 +125,13 @@ a {
   background-color: $color-error;
 }
 
+.mat-divider {
+  margin-top: 0.2rem !important;
+}
+
 .tooltip-primary {
   @include z-index("universe");
+  font-size: 0.7rem;
   color: $color-white !important;
   background: $color-primary !important;
 }

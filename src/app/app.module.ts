@@ -16,15 +16,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // MATERIAL //
 import { MatMenuModule } from '@angular/material/menu';
-import { MatSortModule } from '@angular/material/sort';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
-import { MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 // MATERIAL //
 
@@ -33,6 +32,7 @@ import { AppComponent } from './app.component';
 import { InputComponent } from './components/input/input.component';
 import { ButtonComponent } from './components/button/button.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { StickerComponent } from './components/sticker/sticker.component';
 import { SnackbarComponent } from './components/snackbar/snackbar.component';
 // COMPONENTS //
 
@@ -86,6 +86,7 @@ const DECLARATIONS = [
   FooterComponent,
   ButtonComponent,
   ResizeDirective,
+  StickerComponent,
   SidebarComponent,
   SpinnerComponent,
   NotFoundComponent,
@@ -106,15 +107,14 @@ const ANGULAR_MODULES = [
 
 const MATERIAL_MODULES = [
   MatIconModule,
-  MatSortModule,
   MatMenuModule,
   MatCardModule,
-  MatTableModule,
   MatInputModule,
   MatSelectModule,
   MatButtonModule,
-  MatToolbarModule,
-  MatPaginatorModule,
+  MatTooltipModule,
+  MatDividerModule,
+  MatExpansionModule,
   MatProgressSpinnerModule,
 ];
 

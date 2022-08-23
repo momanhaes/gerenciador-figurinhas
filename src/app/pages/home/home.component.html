@@ -1,8 +1,87 @@
 <app-header></app-header>
-<app-sidebar></app-sidebar>
 
 <div class="root">
   <div class="container">
-   
+    <div class="content" [@appeard]="state">
+      <div class="core">
+        <div class="text">
+          <h1>Bem-vindo, <span class="color-primary">{{ profile.name ? profile.name : 'usuário' }}</span>!</h1>
+          <p>Digite o código da figurinha para pesquisar.</p>
+        </div>
+
+        <div class="input">
+          <i class="fa fa-search mr-3"></i>
+
+          <app-input [isSearch]="true" type="text" [required]="false" [form]="stickerForm" label="ID da figurinha"
+            control="stickerControl" placeholder="Pesquisar figurinha...">
+          </app-input>
+        </div>
+      </div>
+
+      <p class="disclaimer">
+        Clique nas seções abaixo para marcar as figurinhas que você já conseguiu.
+      </p>
+
+      <div class="container stickers" *ngIf="sections.length">
+        <ng-container *ngFor="let section of sections">
+          <div class="row">
+
+            <mat-accordion>
+              <mat-expansion-panel>
+
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <i [class]="section.icon"></i>
+                    <span>{{ section.name }}</span>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+
+                <div *ngIf="section.stickers" class="row sticker justify-content-center">
+                  <ng-container *ngFor="let sticker of section.stickers">
+                    <app-sticker [sticker]="sticker"></app-sticker>
+                  </ng-container>
+                </div>
+
+                <ng-container *ngIf="section.group">
+                  <ng-container *ngFor="let group of section.group">
+                    <div class="group">
+                      <span>{{ group.name }}</span>
+                      <mat-divider></mat-divider>
+                    </div>
+
+                    <ng-container *ngIf="group.country">
+                      <mat-expansion-panel *ngFor="let country of group.country">
+
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
+                            <img [src]="country.icon">
+                            <span>{{ country.name }}</span>
+                          </mat-panel-title>
+                        </mat-expansion-panel-header>
+
+                        <div *ngIf="country.stickers" class="row sticker justify-content-center">
+                          <ng-container *ngFor="let sticker of country.stickers">
+                            <app-sticker [sticker]="sticker"></app-sticker>
+                          </ng-container>
+                        </div>
+
+                      </mat-expansion-panel>
+                    </ng-container>
+
+                  </ng-container>
+                </ng-container>
+
+              </mat-expansion-panel>
+            </mat-accordion>
+
+          </div>
+        </ng-container>
+      </div>
+
+      <div class="loading">
+        <app-spinner *ngIf="isUserLoading" label="Carregando figurinha..." [size]="1.3">
+        </app-spinner>
+      </div>
+    </div>
   </div>
 </div>
