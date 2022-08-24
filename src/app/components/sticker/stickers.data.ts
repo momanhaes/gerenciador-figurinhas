@@ -1,6 +1,6 @@
 import { ISection } from './sticker.interface';
 
-export const SECTIONS_MOCK: ISection[] = [
+export const SECTIONS: ISection[] = [
   {
     name: 'Especiais e mais',
     icon: 'fa fa-star mr-2',

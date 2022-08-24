@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ISticker } from './sticker.interface';
 
 @Component({
@@ -7,15 +7,15 @@ import { ISticker } from './sticker.interface';
   styleUrls: ['./sticker.component.scss'],
 })
 export class StickerComponent implements OnInit {
+  @Output() toggleEvent = new EventEmitter<ISticker>();
   @Input() sticker!: ISticker;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   toggleSticker(): void {
     this.sticker.active = !this.sticker.active;
+    this.toggleEvent.emit();
   }
-
 }

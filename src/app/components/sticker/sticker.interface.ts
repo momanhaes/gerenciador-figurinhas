@@ -1,3 +1,9 @@
+export enum SectionType {
+  ESPECIAIS = 'Especiais e mais',
+  PAISES = 'Países',
+  TEMPO = 'Linha do tempo'
+}
+
 export interface ICountry {
   name: string;
   icon: string;

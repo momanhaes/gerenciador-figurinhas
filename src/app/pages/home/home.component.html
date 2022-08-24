@@ -2,26 +2,12 @@
 
 <div class="root">
   <div class="container">
-    <div class="content" [@appeard]="state">
-      <div class="core">
-        <div class="text">
-          <h1>Bem-vindo, <span class="color-primary">{{ profile.name ? profile.name : 'usuário' }}</span>!</h1>
-          <p>Digite o código da figurinha para pesquisar.</p>
-        </div>
+    <div class="content" *ngIf="sections.length" [@appeard]="state">
 
-        <div class="input">
-          <i class="fa fa-search mr-3"></i>
+      <div class="header-core">
+        <img src="assets/avatar/man.png">
 
-          <app-input 
-            type="text" 
-            [isSearch]="true" 
-            [required]="false" 
-            [form]="stickerForm" 
-            label="ID da figurinha"
-            control="stickerControl" 
-            placeholder="Pesquisar figurinha...">
-          </app-input>
-        </div>
+        <h1>Bem-vindo, <span class="color-primary">{{ profile.name ? profile.name : 'usuário' }}</span>!</h1>
       </div>
 
       <p class="disclaimer">
@@ -44,7 +30,7 @@
 
                 <div *ngIf="section.stickers" class="row sticker justify-content-center">
                   <ng-container *ngFor="let sticker of section.stickers">
-                    <app-sticker [sticker]="sticker"></app-sticker>
+                    <app-sticker [sticker]="sticker" (toggleEvent)="updateSticker()"></app-sticker>
                   </ng-container>
                 </div>
 
@@ -67,7 +53,7 @@
 
                         <div *ngIf="country.stickers" class="row sticker justify-content-center">
                           <ng-container *ngFor="let sticker of country.stickers">
-                            <app-sticker [sticker]="sticker"></app-sticker>
+                            <app-sticker [sticker]="sticker" (toggleEvent)="updateSticker()"></app-sticker>
                           </ng-container>
                         </div>
 
@@ -84,25 +70,45 @@
         </ng-container>
       </div>
 
-      <div class="menu">
+      <div class="menu" *ngIf="stickers">
         <mat-tab-group>
           <mat-tab label="Coleção">
             <div class="dashboard">
               <div class="group">
-                <p class="label">Colecionadas - 10%</p>
-                <p class="sticker">67 de 670 figurinhas</p>
-                <mat-progress-bar mode="determinate" value="10"></mat-progress-bar>
+                <p class="label">Colecionadas - {{ collectPercent | number : '1.2-2' }}%</p>
+                <p class="sticker">{{ collected }} de {{ stickers.length }} figurinhas</p>
+                <mat-progress-bar mode="determinate" [value]="collectPercent"></mat-progress-bar>
               </div>
 
               <div class="group">
-                <p class="label">Ausentes - 90%</p>
-                <p class="sticker">603 de 670 figurinhas</p>
-                <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
+                <p class="label">Faltantes - {{ missingPercent | number : '1.2-2' }}%</p>
+                <p class="sticker">{{ missing }} de {{ stickers.length }} figurinhas</p>
+                <mat-progress-bar mode="determinate" [value]="missingPercent"></mat-progress-bar>
               </div>
             </div>
           </mat-tab>
 
           <mat-tab label="Repetidas">
+            <div class="core">
+              <div class="text">
+                <p>Digite o código da figurinha repetida para pesquisar.</p>
+              </div>
+      
+              <div class="input">
+                <i class="fa fa-search mr-3"></i>
+      
+                <app-input 
+                  type="text" 
+                  [isSearch]="true" 
+                  [required]="false" 
+                  [form]="stickerForm" 
+                  label="ID da figurinha"
+                  control="stickerControl" 
+                  placeholder="Pesquisar figurinha...">
+                </app-input>
+              </div>
+            </div>
+
             <div class="dashboard">
               <div class="group">
                 <p class="label">Repetidas</p>

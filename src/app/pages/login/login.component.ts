@@ -103,14 +103,14 @@ export class LoginComponent implements OnInit {
     const mock = {
       _id: '123456',
       token: '123456',
-      name: 'Matheus',
-      email: 'momanhaes@gmail.com',
+      name: 'Usuário',
+      email: 'usuario@gmail.com',
       password: '123456',
     };
 
     //TODO: Alterar mock pela integração
     setTimeout(() => {
-      this.notificationService.notify('Bem-vindo, Matheus!');
+      this.notificationService.notify('Bem-vindo, Usuário!');
       this.userService.setToken('123456');
       this.userService.setUser(mock);
       this.isLoading = false;
@@ -166,8 +166,8 @@ export class LoginComponent implements OnInit {
     const mock = {
       _id: '123456',
       token: '123456',
-      name: 'Matheus',
-      email: 'momanhaes@gmail.com',
+      name: 'Usuário',
+      email: 'usuario@gmail.com',
       password: '123456',
     };
 

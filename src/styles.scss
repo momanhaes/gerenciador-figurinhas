@@ -139,6 +139,10 @@ a {
   background: $color-background;
 }
 
+.mat-expansion-panel-header {
+  font-family: $font-montserrat !important;
+}
+
 .mat-expansion-panel:not(.mat-expanded):not([aria-disabled="true"]) .mat-expansion-panel-header:hover {
   @include large-and-down {
     background: $color-background;

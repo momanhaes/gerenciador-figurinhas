@@ -34,6 +34,7 @@
 
       span {
         font-size: 1rem;
+        font-family: $font-montserrat !important;
       }
     }
 
@@ -73,13 +74,31 @@
       margin: 24px 0 24px 0;
       box-shadow: 2px 4px 8px 0 $color-shadow;
 
-
       @include large-and-down {
         padding: 32px;
       }
 
+      .header-core {
+        text-align: center;
+
+        h1 {
+          text-align: center;
+          margin-top: 1rem;
+        }
+
+        img {
+          width: 15%;
+
+          @include large-and-down {
+            width: 50%;
+          }
+        }
+      }
+
       .core {
         @include between;
+        margin-top: 1.5rem;
+
         @include large-and-down {
           display: block;
           text-align: center;
@@ -89,9 +108,8 @@
           text-decoration: none;
 
           p {
-            @include large-and-down {
-              margin-bottom: 24px;
-            }
+            margin: 0;
+            text-align: left;
           }
         }
 
@@ -101,6 +119,7 @@
           align-items: center;
 
           @include large-and-down {
+            margin: 1rem 0;
             width: 100%;
           }
 
@@ -128,7 +147,7 @@
         margin: 1.5rem 0 0 0;
 
         .group {
-          margin: 1.5rem 0;
+          margin: 2rem 0;
 
           .label {
             font-size: 1rem;
@@ -166,16 +185,18 @@
   border-radius: 2px;
 }
 
+::ng-deep .mat-tab-label {
+  color: $color-text;
+  opacity: 1 !important;
+}
+
 ::ng-deep .mat-tab-labels {
   @include center;
 }
 
-::ng-deep .mat-ink-bar {
-  background-color: $color-primary !important;
-}
-
 ::ng-deep .mat-tab-label-content {
   font-size: 0.9rem;
+  color: $color-text;
   font-family: $font-montserrat !important;
 }
 
@@ -185,8 +206,8 @@
   }
 }
 
-::ng-deep .mat-tab-label-content {
-  color: $color-text;
+::ng-deep .mat-ink-bar {
+  background-color: $color-primary !important;
 }
 
 // ANGULAR MATERIAL PROGRESSBAR //
