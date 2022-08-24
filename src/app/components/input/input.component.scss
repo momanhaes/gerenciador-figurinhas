@@ -11,12 +11,13 @@ mat-form-field {
 .disabled {
   color: $color-disabled !important;
 
-  &:hover {
-    cursor: no-drop !important;
+  @include large-and-up {
+    &:hover {
+      cursor: no-drop !important;
+    }
   }
 }
 
 ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
   color: $color-primary !important;
 }
-

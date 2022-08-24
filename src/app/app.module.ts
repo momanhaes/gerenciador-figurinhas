@@ -18,12 +18,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatBadgeModule } from '@angular/material/badge';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 // MATERIAL //
 
@@ -39,7 +42,6 @@ import { SnackbarComponent } from './components/snackbar/snackbar.component';
 // FRAGMENTS //
 import { HeaderComponent } from './fragments/header/header.component';
 import { FooterComponent } from './fragments/footer/footer.component';
-import { SidebarComponent } from './fragments/sidebar/sidebar.component';
 import { LoginFormComponent } from './fragments/login-form/login-form.component';
 import { ProfileFormComponent } from './fragments/profile-form/profile-form.component';
 import { RegisterFormComponent } from './fragments/register-form/register-form.component';
@@ -87,7 +89,6 @@ const DECLARATIONS = [
   ButtonComponent,
   ResizeDirective,
   StickerComponent,
-  SidebarComponent,
   SpinnerComponent,
   NotFoundComponent,
   SnackbarComponent,
@@ -108,13 +109,16 @@ const ANGULAR_MODULES = [
 const MATERIAL_MODULES = [
   MatIconModule,
   MatMenuModule,
+  MatTabsModule,
   MatCardModule,
   MatInputModule,
+  MatBadgeModule,
   MatSelectModule,
   MatButtonModule,
   MatTooltipModule,
   MatDividerModule,
   MatExpansionModule,
+  MatProgressBarModule,
   MatProgressSpinnerModule,
 ];
 

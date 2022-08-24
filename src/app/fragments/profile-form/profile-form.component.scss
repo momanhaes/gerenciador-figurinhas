@@ -42,8 +42,10 @@
         font-size: 2rem;
         margin-right: 1rem;
 
-        &:hover {
-          transform: scale(1.1);
+        @include large-and-up {
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
     }
@@ -91,15 +93,19 @@
             margin-left: 1rem;
           }
 
-          &:hover {
-            background-color: $color-danger-hover;
-            color: $color-white;
+          @include large-and-up {
+            &:hover {
+              background-color: $color-danger-hover;
+              color: $color-white;
+            }
           }
         }
 
-        &:hover {
-          background-color: $color-primary-hover;
-          color: $color-white;
+        @include large-and-up {
+          &:hover {
+            background-color: $color-primary-hover;
+            color: $color-white;
+          }
         }
 
         &:disabled {

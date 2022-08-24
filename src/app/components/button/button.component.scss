@@ -20,8 +20,10 @@ button {
 .primary {
   background: $color-primary;
 
-  &:hover {
-    background: $color-primary-hover;
+  @include large-and-up {
+    &:hover {
+      background: $color-primary-hover;
+    }
   }
 }
 

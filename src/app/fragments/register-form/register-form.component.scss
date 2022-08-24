@@ -57,9 +57,11 @@
   background: $color-primary;
   transition: background-color 0.2s, color 0.2s;
 
-  &:hover {
-    background-color: $color-primary-hover;
-    color: $color-white;
+  @include large-and-up {
+    &:hover {
+      background-color: $color-primary-hover;
+      color: $color-white;
+    }
   }
 
   &:disabled {
@@ -77,8 +79,10 @@
   font-size: 1.1rem;
   cursor: pointer;
 
-  &:hover {
-    color: $color-primary-hover !important;
+  @include large-and-up {
+    &:hover {
+      color: $color-primary-hover !important;
+    }
   }
 
   @media (max-width: 343px) {

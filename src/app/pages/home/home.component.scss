@@ -17,6 +17,14 @@
       }
     }
 
+    .menu {
+      margin: 1rem 0;
+
+      mat-tab-group {
+        width: 100%;
+      }
+    }
+
     .group {
       margin: 1rem 0;
 
@@ -47,7 +55,7 @@
           height: 18px;
           margin-right: 8px;
         }
-        
+
         i {
           color: $color-primary !important;
         }
@@ -58,28 +66,13 @@
       }
     }
 
-    .section {
-      @include between;
-      cursor: pointer;
-      background-color: $color-primary;
-      color: $color-white !important;
-      font-weight: 600;
-      margin-bottom: 4px;
-      margin-top: 8px;
-      padding: 1rem;
-      width: 100%;
-
-      span {
-        font-size: 1rem;
-      }
-    }
-
     .content {
       border: 0px;
       padding: 64px;
       border-radius: 0.8rem;
       margin: 24px 0 24px 0;
       box-shadow: 2px 4px 8px 0 $color-shadow;
+
 
       @include large-and-down {
         padding: 32px;
@@ -130,6 +123,70 @@
       i {
         font-size: 18px;
       }
+
+      .dashboard {
+        margin: 1.5rem 0 0 0;
+
+        .group {
+          margin: 1.5rem 0;
+
+          .label {
+            font-size: 1rem;
+          }
+
+          .sticker {
+            font-size: 0.85rem;
+          }
+
+          p {
+            line-height: 0.5rem;
+          }
+
+          mat-progress-bar {
+            width: 100%;
+            margin-top: 0.5rem;
+          }
+        }
+      }
     }
   }
 }
+
+// ANGULAR MATERIAL PROGRESSBAR //
+
+::ng-deep .mat-progress-bar-fill::after {
+  background-color: $color-primary;
+}
+
+::ng-deep .mat-progress-bar-buffer {
+  background: $color-secondary;
+}
+
+::ng-deep .mat-progress-bar {
+  border-radius: 2px;
+}
+
+::ng-deep .mat-tab-labels {
+  @include center;
+}
+
+::ng-deep .mat-ink-bar {
+  background-color: $color-primary !important;
+}
+
+::ng-deep .mat-tab-label-content {
+  font-size: 0.9rem;
+  font-family: $font-montserrat !important;
+}
+
+::ng-deep .mat-tab-body-content {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+::ng-deep .mat-tab-label-content {
+  color: $color-text;
+}
+
+// ANGULAR MATERIAL PROGRESSBAR //

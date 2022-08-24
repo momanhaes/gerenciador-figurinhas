@@ -28,6 +28,28 @@
       }
     }
 
+    .logout {
+      @include end;
+      cursor: pointer;
+      transition: transform 0.1s;
+      transform: scale(1);
+
+      @include large-and-up {
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      span {
+        font-size: 16px;
+      }
+
+      i {
+        font-size: 16px;
+        color: $color-primary;
+      }
+    }
+
     i {
       font-size: 36px;
       color: $color-primary;

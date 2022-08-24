@@ -1,4 +1,7 @@
 @import "app/scss/includes.scss";
+
+// ANGULAR MATERIAL //
+
 @import "~@angular/material/theming";
 @include mat-core();
 
@@ -16,6 +19,10 @@ $gerenciador-theme: mat-light-theme(
 );
 
 @include angular-material-theme($gerenciador-theme);
+
+// ANGULAR MATERIAL //
+
+// GENERALS //
 
 *,
 *:before,
@@ -55,7 +62,7 @@ p {
 
 html,
 body {
-  background-color: $color-background !important;
+  background-color: $color-background-secondary !important;
   font-family: $font-montserrat !important;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
@@ -84,8 +91,10 @@ a {
   transition: transform 0.1s;
   transform: scale(1);
 
-  &:hover {
-    transform: scale(1.1);
+  @include large-and-up {
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
@@ -99,19 +108,9 @@ a {
   top: 50%;
 }
 
-.swal2-title {
-  color: $color-text !important;
-}
+// GENERALS //
 
-.swal2-html-container {
-  color: $color-text !important;
-}
-
-.swal2-popup .swal2-styled {
-  &:focus {
-    box-shadow: none !important;
-  }
-}
+// ANGULAR MATERIAL //
 
 .mat-form-field-wrapper {
   margin-bottom: -1rem !important;
@@ -135,3 +134,45 @@ a {
   color: $color-white !important;
   background: $color-primary !important;
 }
+
+.mat-expansion-panel {
+  background: $color-background;
+}
+
+.mat-expansion-panel:not(.mat-expanded):not([aria-disabled="true"]) .mat-expansion-panel-header:hover {
+  @include large-and-down {
+    background: $color-background;
+  }
+}
+
+.mat-expansion-panel:not(.mat-expanded) {
+  &:not([aria-disabled="true"]) {
+    .mat-expansion-panel-header {
+      @include large-and-down {
+        &:hover {
+          background: $color-background;
+        }
+      }
+    }
+  }
+}
+
+// ANGULAR MATERIAL //
+
+// SWEET ALERT //
+
+.swal2-title {
+  color: $color-text !important;
+}
+
+.swal2-html-container {
+  color: $color-text !important;
+}
+
+.swal2-popup .swal2-styled {
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+// SWEET ALERT //
