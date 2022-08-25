@@ -7,79 +7,79 @@ export const SECTIONS: ISection[] = [
     stickers: [
       {
         code: '00',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC1',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC2',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC3',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC4',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC5',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC6',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC7',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC8',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC9',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC10',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC11',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC12',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC13',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC14',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC15',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC16',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC17',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC18',
-        active: false,
+        qtde: 0,
       },
     ],
   },
@@ -96,83 +96,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'QAT1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'QAT20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -182,83 +202,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'ECU1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ECU20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -268,83 +308,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'SEN1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SEN20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -354,83 +414,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'NED1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'NED20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -445,83 +525,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'ENG1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ENG20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -531,83 +631,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'IRN1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'IRN20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -617,83 +737,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'USA1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'USA20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -703,83 +843,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'WAL1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'WAL20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -794,83 +954,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'ARG1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ARG20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -880,83 +1060,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'KSA1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KSA20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -966,83 +1166,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'MEX1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MEX20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -1052,83 +1272,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'POL1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POL20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -1143,83 +1383,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'FRA1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'FRA20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -1229,83 +1489,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'AUS1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'AUS20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -1315,83 +1595,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'DEN1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'DEN20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -1401,83 +1701,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'TUN1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'TUN20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -1492,83 +1812,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'ESP1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'ESP20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -1578,83 +1918,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'CRC1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRC20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -1664,83 +2024,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'GER1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GER20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -1750,83 +2130,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'JPN1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'JPN20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -1841,83 +2241,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'BEL1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BEL20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -1927,83 +2347,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'CAN1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CAN20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -2013,83 +2453,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'MAR1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'MAR20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -2099,83 +2559,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'CRO1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CRO20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -2190,83 +2670,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'BRA1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'BRA20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -2276,83 +2776,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'SRB1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SRB20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -2362,83 +2882,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'SUI1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'SUI20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -2448,83 +2988,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'CMR1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'CMR20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -2539,83 +3099,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'POR1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'POR20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -2625,83 +3205,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'GHA1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'GHA20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -2711,83 +3311,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'URU1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'URU20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -2797,83 +3417,103 @@ export const SECTIONS: ISection[] = [
             stickers: [
               {
                 code: 'KOR1',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR2',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR3',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR4',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR5',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR6',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR7',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR8',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR9',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR10',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR11',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR12',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR13',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR14',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR15',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR16',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR17',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR18',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR19',
-                active: false,
+      
+                qtde: 0,
               },
               {
                 code: 'KOR20',
-                active: false,
+      
+                qtde: 0,
               },
             ],
           },
@@ -2887,47 +3527,47 @@ export const SECTIONS: ISection[] = [
     stickers: [
       {
         code: 'FWC19',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC20',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FWC21',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FW22',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FW23',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FW24',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FW25',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FW26',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FW27',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FW28',
-        active: false,
+        qtde: 0,
       },
       {
         code: 'FW29',
-        active: false,
+        qtde: 0,
       },
     ],
   },

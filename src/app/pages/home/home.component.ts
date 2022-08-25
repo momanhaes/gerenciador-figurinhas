@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { ALERT_THEME } from 'src/app/utils/theme';
 import { APPEARD } from 'src/app/animations/appeard.animation';
 import { IUser, UserService } from 'src/app/services/user.service';
 import { SECTIONS } from 'src/app/components/sticker/stickers.data';
@@ -16,35 +16,25 @@ import { ISection, ISticker, SectionType } from 'src/app/components/sticker/stic
 export class HomeComponent implements OnInit {
   public state = 'ready';
   public profile!: IUser;
-  public stickerForm!: FormGroup;
   public sections: ISection[] = [];
   public stickers: ISticker[] = [];
-  public isUserLoading: boolean = false;
+  public alertTheme = ALERT_THEME;
+  public loading: boolean = true;
   public panelOpenState: boolean = false;
 
   constructor(
     private userService: UserService,
-    private localStorageService: LocalStorageService
+    private localStorageService: LocalStorageService,
   ) {}
 
-  public get collected(): number {
-    return this.stickers.filter(item => item.active).length;
-  }
-
-  public get missing(): number {
-    return this.stickers.filter(item => !item.active).length;
-  }
-
-  public get collectPercent(): number {
-    return ((this.collected * 100) / this.stickers.length);
-  }
-
-  public get missingPercent(): number {
-    return 100 - this.collectPercent;
-  }
-
   ngOnInit() {
-    this.stickerForm = new FormGroup({ stickerControl: new FormControl('') });
+    setTimeout(() => { 
+      this.getData();
+      this.loading = false; 
+    }, 500)
+  }
+
+  getData(): void {
     this.getUser();
     this.getSections();
     this.getStickers();
@@ -85,10 +75,11 @@ export class HomeComponent implements OnInit {
     }
 
     this.stickers = allStickers;
-
   }
 
-  updateSticker() {
-    this.localStorageService.set(KeyType.DATA, this.sections);
+  resetData(): void {
+    this.localStorageService.clear();
+    this.getSections();
+    this.getStickers();
   }
 }

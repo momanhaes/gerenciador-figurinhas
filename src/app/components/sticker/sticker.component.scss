@@ -18,16 +18,12 @@
     width: 4rem;
   }
 
-  span {
-    color: $color-primary;
-  }
-
   @include large-and-up {
     &:hover {
       border: 2px solid $color-primary;
       background-color: $color-primary;
 
-      span {
+      .code {
         color: $color-white !important;
       }
     }
@@ -37,8 +33,29 @@
     border: 2px solid $color-primary;
     background-color: $color-primary;
 
-    span {
+    .code {
       color: $color-white !important;
     }
   }
+
+  .code {
+    color: $color-primary;
+  }
 }
+
+// ANGULAR MATERIAL //
+
+::ng-deep {
+  .mat-badge-content {
+    background-color: $color-secondary !important;
+    color: $color-primary !important;
+    @include z-index("sky");
+  }
+
+  .mat-badge-medium.mat-badge-overlap.mat-badge-after .mat-badge-content {
+    right: 0px;
+    top: -15px;
+  }
+}
+
+// ANGULAR MATERIAL //

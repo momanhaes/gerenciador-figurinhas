@@ -1,0 +1,54 @@
+<div class="container" *ngIf="sections.length">
+  <ng-container *ngFor="let section of sections">
+    <div class="row">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <i [class]="section.icon"></i>
+              <span>{{ section.name }}</span>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <div *ngIf="section.stickers" class="row sticker">
+            <ng-container *ngFor="let sticker of section.stickers">
+              <app-sticker 
+                [sticker]="sticker" 
+                (toggleEvent)="updateStickers()">
+              </app-sticker>
+            </ng-container>
+          </div>
+
+          <ng-container *ngIf="section.group">
+            <ng-container *ngFor="let group of section.group">
+              <div class="group">
+                <span>{{ group.name }}</span>
+                <mat-divider></mat-divider>
+              </div>
+  
+              <ng-container *ngIf="group.country">
+                <mat-expansion-panel *ngFor="let country of group.country">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <img [src]="country.icon">
+                      <span>{{ country.name }}</span>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+  
+                  <div *ngIf="country.stickers" class="row sticker">
+                    <ng-container *ngFor="let sticker of country.stickers">
+                      <app-sticker 
+                        [sticker]="sticker" 
+                        (toggleEvent)="updateStickers()">
+                      </app-sticker>
+                    </ng-container>
+                  </div>
+                </mat-expansion-panel>
+              </ng-container>
+            </ng-container>
+          </ng-container>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </ng-container>
+</div>

@@ -1,7 +1,8 @@
 <div 
   class="sticker-id" 
   (click)="toggleSticker()" 
-  [class.active]="sticker.active">
+  [matBadge]="getBadge(sticker.qtde)" 
+  [class.active]="isActive(sticker.qtde)">
 
-  <span>{{ sticker.code }}</span>
+  <span class="code">{{ sticker.code }}</span>
 </div>

@@ -2,127 +2,33 @@
 
 <div class="root">
   <div class="container">
-    <div class="content" *ngIf="sections.length" [@appeard]="state">
-
-      <div class="header-core">
-        <img src="assets/avatar/man.png">
-
-        <h1>Bem-vindo, <span class="color-primary">{{ profile.name ? profile.name : 'usuário' }}</span>!</h1>
-      </div>
-
-      <p class="disclaimer">
-        Clique nas seções abaixo para marcar as figurinhas que você já conseguiu.
-      </p>
-
-      <div class="container stickers" *ngIf="sections.length">
-        <ng-container *ngFor="let section of sections">
-          <div class="row">
-
-            <mat-accordion>
-              <mat-expansion-panel>
-
-                <mat-expansion-panel-header>
-                  <mat-panel-title>
-                    <i [class]="section.icon"></i>
-                    <span>{{ section.name }}</span>
-                  </mat-panel-title>
-                </mat-expansion-panel-header>
-
-                <div *ngIf="section.stickers" class="row sticker justify-content-center">
-                  <ng-container *ngFor="let sticker of section.stickers">
-                    <app-sticker [sticker]="sticker" (toggleEvent)="updateSticker()"></app-sticker>
-                  </ng-container>
-                </div>
-
-                <ng-container *ngIf="section.group">
-                  <ng-container *ngFor="let group of section.group">
-                    <div class="group">
-                      <span>{{ group.name }}</span>
-                      <mat-divider></mat-divider>
-                    </div>
-
-                    <ng-container *ngIf="group.country">
-                      <mat-expansion-panel *ngFor="let country of group.country">
-
-                        <mat-expansion-panel-header>
-                          <mat-panel-title>
-                            <img [src]="country.icon">
-                            <span>{{ country.name }}</span>
-                          </mat-panel-title>
-                        </mat-expansion-panel-header>
-
-                        <div *ngIf="country.stickers" class="row sticker justify-content-center">
-                          <ng-container *ngFor="let sticker of country.stickers">
-                            <app-sticker [sticker]="sticker" (toggleEvent)="updateSticker()"></app-sticker>
-                          </ng-container>
-                        </div>
-
-                      </mat-expansion-panel>
-                    </ng-container>
-
-                  </ng-container>
-                </ng-container>
-
-              </mat-expansion-panel>
-            </mat-accordion>
-
-          </div>
-        </ng-container>
-      </div>
-
-      <div class="menu" *ngIf="stickers">
-        <mat-tab-group>
-          <mat-tab label="Coleção">
-            <div class="dashboard">
-              <div class="group">
-                <p class="label">Colecionadas - {{ collectPercent | number : '1.2-2' }}%</p>
-                <p class="sticker">{{ collected }} de {{ stickers.length }} figurinhas</p>
-                <mat-progress-bar mode="determinate" [value]="collectPercent"></mat-progress-bar>
-              </div>
-
-              <div class="group">
-                <p class="label">Faltantes - {{ missingPercent | number : '1.2-2' }}%</p>
-                <p class="sticker">{{ missing }} de {{ stickers.length }} figurinhas</p>
-                <mat-progress-bar mode="determinate" [value]="missingPercent"></mat-progress-bar>
-              </div>
-            </div>
-          </mat-tab>
-
-          <mat-tab label="Repetidas">
-            <div class="core">
-              <div class="text">
-                <p>Digite o código da figurinha repetida para pesquisar.</p>
-              </div>
+    <div 
+      class="content"
+      [@appeard]="state"
+      *ngIf="sections.length && !loading">
       
-              <div class="input">
-                <i class="fa fa-search mr-3"></i>
-      
-                <app-input 
-                  type="text" 
-                  [isSearch]="true" 
-                  [required]="false" 
-                  [form]="stickerForm" 
-                  label="ID da figurinha"
-                  control="stickerControl" 
-                  placeholder="Pesquisar figurinha...">
-                </app-input>
-              </div>
-            </div>
+      <app-profile 
+        [profile]="profile">
+      </app-profile>
 
-            <div class="dashboard">
-              <div class="group">
-                <p class="label">Repetidas</p>
-                <p class="sticker">50 figurinhas</p>
-              </div>
-            </div>
-          </mat-tab>
-        </mat-tab-group>
-      </div>
+      <app-section 
+        [sections]="sections">
+      </app-section>
 
-      <div class="loading">
-        <app-spinner *ngIf="isUserLoading" label="Carregando figurinha..." [size]="1.3">
-        </app-spinner>
-      </div>
+      <app-menu 
+        [stickers]="stickers" 
+        [sections]="sections"
+        (resetEvent)="resetData()">
+      </app-menu>
+    </div>
+
+    <div class="loading">
+      <app-spinner 
+        *ngIf="loading" 
+        [size]="1.3"
+        [@appeard]="state"
+        label="Carregando..." >
+      </app-spinner>
     </div>
   </div>
 </div>

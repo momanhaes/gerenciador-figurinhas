@@ -1,0 +1,122 @@
+@import "/src/app/scss/includes.scss";
+
+.menu {
+  margin: 1rem 0;
+
+  .core {
+    @include between;
+    margin-top: 1.5rem;
+
+    @include large-and-down {
+      display: block;
+      text-align: center;
+    }
+
+    .text {
+      text-decoration: none;
+
+      p {
+        margin: 0;
+        text-align: left;
+      }
+    }
+
+    .input {
+      width: 40%;
+      display: flex;
+      align-items: center;
+
+      @include large-and-down {
+        margin: 1rem 0;
+        width: 100%;
+      }
+
+      i {
+        font-size: 21px;
+        color: $color-primary !important;
+      }
+    }
+
+    app-input {
+      width: 100%;
+    }
+  }
+
+  .dashboard {
+    margin: 1.5rem 0 0 0;
+
+    .button {
+      text-align: center;
+    }
+
+    .group {
+      margin: 2rem 0;
+
+      .label {
+        font-size: 1rem;
+      }
+
+      .sticker {
+        font-size: 0.85rem;
+      }
+
+      p {
+        line-height: 0.5rem;
+      }
+
+      mat-tab-group {
+        width: 100%;
+      }
+
+      mat-progress-bar {
+        width: 100%;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+
+// ANGULAR MATERIAL //
+
+::ng-deep {
+  .mat-tab-label {
+    color: $color-text;
+    opacity: 1 !important;
+  }
+
+  .mat-tab-labels {
+    @include center;
+  }
+
+  .mat-tab-label-content {
+    font-size: 0.9rem;
+    color: $color-text;
+    font-family: $font-montserrat;
+  }
+
+  .mat-ink-bar {
+    background-color: $color-primary !important;
+  }
+
+  .mat-progress-bar-buffer {
+    background: $color-secondary;
+  }
+
+  .mat-progress-bar {
+    border-radius: 2px;
+  }
+
+  .mat-progress-bar-fill {
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
+  .mat-tab-body-content {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+// ANGULAR MATERIAL //

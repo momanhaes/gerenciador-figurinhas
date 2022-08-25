@@ -12,7 +12,7 @@ export interface ICountry {
 
 export interface ISticker {
   code: string;
-  active: boolean;
+  qtde: number;
 }
 
 export interface IGroup {

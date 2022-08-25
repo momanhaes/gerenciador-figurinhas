@@ -8,65 +8,6 @@
     margin-bottom: 2rem;
     margin-top: 6rem;
 
-    .disclaimer {
-      margin-top: 3rem;
-
-      @include large-and-down {
-        text-align: center;
-        margin-top: 2rem;
-      }
-    }
-
-    .menu {
-      margin: 1rem 0;
-
-      mat-tab-group {
-        width: 100%;
-      }
-    }
-
-    .group {
-      margin: 1rem 0;
-
-      &:first-child {
-        margin: 0 0 1rem 0;
-      }
-
-      span {
-        font-size: 1rem;
-        font-family: $font-montserrat !important;
-      }
-    }
-
-    .stickers {
-      margin-top: 0rem;
-
-      .sticker {
-        margin: 0 0 1rem 0;
-      }
-
-      mat-accordion {
-        width: 100%;
-        margin-top: 0.5rem;
-      }
-
-      mat-panel-title {
-        img {
-          width: 18px;
-          height: 18px;
-          margin-right: 8px;
-        }
-
-        i {
-          color: $color-primary !important;
-        }
-
-        span {
-          font-size: 1rem;
-        }
-      }
-    }
-
     .content {
       border: 0px;
       padding: 64px;
@@ -77,137 +18,15 @@
       @include large-and-down {
         padding: 32px;
       }
+    }
 
-      .header-core {
-        text-align: center;
-
-        h1 {
-          text-align: center;
-          margin-top: 1rem;
-        }
-
-        img {
-          width: 15%;
-
-          @include large-and-down {
-            width: 50%;
-          }
-        }
+    .loading {
+      @include center;
+      @include large-and-down {
+        margin-top: 2rem;
       }
 
-      .core {
-        @include between;
-        margin-top: 1.5rem;
-
-        @include large-and-down {
-          display: block;
-          text-align: center;
-        }
-
-        .text {
-          text-decoration: none;
-
-          p {
-            margin: 0;
-            text-align: left;
-          }
-        }
-
-        .input {
-          width: 40%;
-          display: flex;
-          align-items: center;
-
-          @include large-and-down {
-            margin: 1rem 0;
-            width: 100%;
-          }
-
-          i {
-            font-size: 21px;
-            color: $color-primary !important;
-          }
-        }
-
-        app-input {
-          width: 100%;
-        }
-      }
-
-      .loading {
-        @include center;
-        margin-top: 16px;
-      }
-
-      i {
-        font-size: 18px;
-      }
-
-      .dashboard {
-        margin: 1.5rem 0 0 0;
-
-        .group {
-          margin: 2rem 0;
-
-          .label {
-            font-size: 1rem;
-          }
-
-          .sticker {
-            font-size: 0.85rem;
-          }
-
-          p {
-            line-height: 0.5rem;
-          }
-
-          mat-progress-bar {
-            width: 100%;
-            margin-top: 0.5rem;
-          }
-        }
-      }
+      margin-top: 4rem;
     }
   }
 }
-
-// ANGULAR MATERIAL PROGRESSBAR //
-
-::ng-deep .mat-progress-bar-fill::after {
-  background-color: $color-primary;
-}
-
-::ng-deep .mat-progress-bar-buffer {
-  background: $color-secondary;
-}
-
-::ng-deep .mat-progress-bar {
-  border-radius: 2px;
-}
-
-::ng-deep .mat-tab-label {
-  color: $color-text;
-  opacity: 1 !important;
-}
-
-::ng-deep .mat-tab-labels {
-  @include center;
-}
-
-::ng-deep .mat-tab-label-content {
-  font-size: 0.9rem;
-  color: $color-text;
-  font-family: $font-montserrat !important;
-}
-
-::ng-deep .mat-tab-body-content {
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-::ng-deep .mat-ink-bar {
-  background-color: $color-primary !important;
-}
-
-// ANGULAR MATERIAL PROGRESSBAR //

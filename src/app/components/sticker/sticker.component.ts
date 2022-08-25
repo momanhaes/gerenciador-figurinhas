@@ -15,7 +15,15 @@ export class StickerComponent implements OnInit {
   ngOnInit() {}
 
   toggleSticker(): void {
-    this.sticker.active = !this.sticker.active;
+    this.sticker.qtde++;
     this.toggleEvent.emit();
+  }
+
+  getBadge(qtde: number): any {
+    if (qtde > 1) return qtde;
+  }
+
+  isActive(number: number): boolean {
+    return number > 0;
   }
 }

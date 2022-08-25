@@ -40,8 +40,11 @@ import { SnackbarComponent } from './components/snackbar/snackbar.component';
 // COMPONENTS //
 
 // FRAGMENTS //
+import { MenuComponent } from './fragments/menu/menu.component';
 import { HeaderComponent } from './fragments/header/header.component';
 import { FooterComponent } from './fragments/footer/footer.component';
+import { ProfileComponent } from './fragments/profile/profile.component';
+import { SectionComponent } from './fragments/section/section.component';
 import { LoginFormComponent } from './fragments/login-form/login-form.component';
 import { ProfileFormComponent } from './fragments/profile-form/profile-form.component';
 import { RegisterFormComponent } from './fragments/register-form/register-form.component';
@@ -82,6 +85,7 @@ const PROVIDERS = [
 const DECLARATIONS = [
   AppComponent,
   HomeComponent,
+  MenuComponent,
   LoginComponent,
   InputComponent,
   HeaderComponent,
@@ -90,6 +94,8 @@ const DECLARATIONS = [
   ResizeDirective,
   StickerComponent,
   SpinnerComponent,
+  ProfileComponent,
+  SectionComponent,
   NotFoundComponent,
   SnackbarComponent,
   LoginFormComponent,

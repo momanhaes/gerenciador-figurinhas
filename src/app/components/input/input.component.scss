@@ -18,6 +18,12 @@ mat-form-field {
   }
 }
 
-::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
-  color: $color-primary !important;
+// ANGULAR MATERIAL //
+
+::ng-deep {
+  .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: $color-primary !important;
+  }
 }
+
+// ANGULAR MATERIAL //

@@ -1,0 +1,30 @@
+@import "/src/app/scss/includes.scss";
+
+.header-core {
+  text-align: center;
+
+  .disclaimer {
+    margin-top: 3rem;
+
+    @include large-and-up {
+      text-align: left;
+    }
+
+    @include large-and-down {
+      margin-top: 2rem;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  img {
+    width: 15%;
+
+    @include large-and-down {
+      width: 50%;
+    }
+  }
+}
