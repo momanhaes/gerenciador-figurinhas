@@ -6,8 +6,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 export const ROUTES: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'login', component: LoginComponent, canActivate: [LoginGuard] },
-  { path: 'home', component: HomeComponent, canActivate: [LoggedInGuard] },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  // { path: 'login', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
   { path: '**', component: NotFoundComponent },
 ];
