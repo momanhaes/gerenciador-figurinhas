@@ -13,6 +13,33 @@
           <p class="sticker">{{ getMissing() }} de {{ stickers.length }} figurinhas</p>
           <mat-progress-bar mode="determinate" [value]="getMissingPercent()"></mat-progress-bar>
         </div>
+
+        <div class="status">
+          <div class="group group-status mr-3">
+            <p class="label">Valor por pacotinho</p>
+            <p class="sticker">R$4,00</p>
+          </div>
+
+          <div class="group group-status mr-3">
+            <p class="label">Valor por figurinha</p>
+            <p class="sticker">R$0,80</p>
+          </div>
+
+          <div class="group group-status mr-3">
+            <p class="label">Total de figurinhas</p>
+            <p class="sticker">{{ getTotal() }}</p>
+          </div>
+          
+          <div class="group group-status mr-3">
+            <p class="label">Total de pacotinhos</p>
+            <p class="sticker">{{ (getTotal() / 5) }}</p>
+          </div>
+
+          <div class="group group-status mr-3">
+            <p class="label">Total gasto</p>
+            <p class="sticker">{{ (getTotal() * (0.8)) | currency:'BRL':true:'1.2-2' }}</p>
+          </div>
+        </div>
       </div>
     </mat-tab>
 
@@ -58,7 +85,7 @@
           <app-button 
           (click)="resetData()"
           icon="fa fa-undo mr-2" 
-          label="Resetar meu progresso">
+          label="Redefinir progresso">
           </app-button>
         </div>
       </div>

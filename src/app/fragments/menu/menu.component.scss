@@ -55,8 +55,29 @@
       text-align: center;
     }
 
+    .status {
+      @include start;
+      flex-wrap: wrap;
+
+      @include large-and-down {
+        display: block;
+      }
+    }
+
     .group {
       margin: 2rem 0;
+
+      &.group-status {
+        margin: 0;
+
+        @include large-and-down {
+          margin: 1.5rem 0;
+
+          &:last-child {
+            margin: 1.5rem 0 0 0;
+          }
+        }
+      }
 
       &.repeated {
         text-align: center;
@@ -68,6 +89,7 @@
 
       .sticker {
         font-size: 0.85rem;
+        color: $color-primary !important;
       }
 
       p {

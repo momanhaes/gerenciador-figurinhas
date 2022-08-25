@@ -47,6 +47,10 @@ export class MenuComponent implements OnInit {
     });
   }
 
+  getTotal(): number {
+    return this.stickers.filter((item) => item.qtde > 0).reduce((acc, obj) => acc + obj.qtde, 0);
+  }
+
   getMissing(): number {
     return this.stickers.filter((item) => item.qtde === 0).length;
   }
