@@ -27,7 +27,7 @@
       align-items: center;
 
       @include large-and-down {
-        margin: 1rem 0;
+        margin: 1rem 0 2rem 0;
         width: 100%;
       }
 
@@ -44,6 +44,12 @@
 
   .dashboard {
     margin: 1.5rem 0 0 0;
+    justify-content: center;
+
+    .row {
+      justify-content: center;
+      margin: 3rem 0 2rem 0;
+    }
 
     .button {
       text-align: center;
@@ -51,6 +57,10 @@
 
     .group {
       margin: 2rem 0;
+
+      &.repeated {
+        text-align: center;
+      }
 
       .label {
         font-size: 1rem;

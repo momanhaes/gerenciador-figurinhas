@@ -13,16 +13,6 @@
       @include start;
       cursor: default;
 
-      transition: transform 0.2s;
-      transform: scale(1);
-
-      @include large-and-up {
-        &:hover {
-          transform: scale(1.1);
-          @include z-index("sky");
-        }
-      }
-
       div {
         line-height: 1.3;
       }
@@ -45,7 +35,7 @@
       }
 
       i {
-        font-size: 16px;
+        font-size: 22px;
         color: $color-primary;
       }
     }

@@ -8,7 +8,9 @@ import { ISticker } from './sticker.interface';
 })
 export class StickerComponent implements OnInit {
   @Output() toggleEvent = new EventEmitter<ISticker>();
+  @Input() isRepeated: boolean = false;
   @Input() sticker!: ISticker;
+
 
   constructor() {}
 
@@ -20,7 +22,8 @@ export class StickerComponent implements OnInit {
   }
 
   getBadge(qtde: number): any {
-    if (qtde > 1) return qtde;
+    if (qtde > 1 && !this.isRepeated) { return qtde; }
+    if (qtde > 1 && this.isRepeated) { return qtde - 1; }
   }
 
   isActive(number: number): boolean {

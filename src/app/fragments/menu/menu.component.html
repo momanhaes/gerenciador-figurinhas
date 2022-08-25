@@ -38,9 +38,20 @@
       </div>
 
       <div class="dashboard">
-        <div class="group">
+        <div *ngIf="repeated.length" class="row">
+          <ng-container *ngFor="let sticker of repeated">
+            <app-sticker 
+              [@appeard]="state"
+              [sticker]="sticker" 
+              [isRepeated]="true"
+              (toggleEvent)="updateStickers()">
+            </app-sticker>
+          </ng-container>
+        </div>
+
+        <div class="group repeated">
           <p class="label">Repetidas</p>
-          <p class="sticker">50 figurinhas</p>
+          <p class="sticker">{{ getRepeatedTotal() }} figurinhas</p>
         </div>
 
         <div class="button">
