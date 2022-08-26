@@ -2,7 +2,7 @@
 
 .root {
   nav {
-    @include z-index("space");
+    @include z-index("universe");
     background: $color-background;
     box-shadow: 0 1px 15px $color-shadow;
     position: fixed;

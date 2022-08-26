@@ -6,7 +6,7 @@ import {
   animate,
 } from '@angular/animations';
 
-export const COLLAPSIBLE = trigger('toggleSearch', [
+export const COLLAPSIBLE = trigger('collapsible', [
   state(
     'hidden',
     style({

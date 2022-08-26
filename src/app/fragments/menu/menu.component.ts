@@ -20,30 +20,50 @@ export class MenuComponent implements OnInit {
   @Input() public stickers: ISticker[] = [];
   @Input() public sections: ISection[] = [];
   
-  public stickerForm: FormGroup = new FormGroup({ stickerControl: new FormControl('') });
+  public collected: ISticker[] = [];
+  public missing: ISticker[] = [];
   public repeated: ISticker[] = [];
-  public searchTerm!: string;
+
   public state: string = 'ready';
   public alertTheme = ALERT_THEME;
+  
+  public collectedForm: FormGroup = new FormGroup({ collected: new FormControl('') });
+  public missingForm: FormGroup = new FormGroup({ missing: new FormControl('') });
+  public repeatedForm: FormGroup = new FormGroup({ repeated: new FormControl('') });
 
   constructor(
     private sectionService: SectionService,
     private notificationService: NotificationService,
     private localStorageService: LocalStorageService
-    ) {}
+  ) {}
 
   ngOnInit() {
     this.sectionService.notifier.subscribe(() => this.updateStickers());
     this.filterStickers();
-    this.getRepeated();
+    this.getStickersCollected();
+    this.getStickersMissing();
+    this.getStickerRepeated();
   }
 
   filterStickers(): void {
-    this.stickerForm.valueChanges.subscribe((searchTerm) => {
-      this.searchTerm = searchTerm.stickerControl;
-      this.getRepeated();
+    this.collectedForm.valueChanges.subscribe((text) => {
+      this.getStickersCollected();
 
-      const result: ISticker[] = this.repeated.filter((item) => item.code?.toUpperCase().includes(this.searchTerm.toUpperCase()));
+      const result: ISticker[] = this.collected.filter((item) => item.code?.toUpperCase().includes(text.collected.toUpperCase()));
+      this.collected = result;
+    });
+
+    this.missingForm.valueChanges.subscribe((text) => {
+      this.getStickersMissing();
+
+      const result: ISticker[] = this.missing.filter((item) => item.code?.toUpperCase().includes(text.missing.toUpperCase()));
+      this.missing = result;
+    });
+    
+    this.repeatedForm.valueChanges.subscribe((text) => {
+      this.getStickerRepeated();
+
+      const result: ISticker[] = this.repeated.filter((item) => item.code?.toUpperCase().includes(text.repeated.toUpperCase()));
       this.repeated = result;
     });
   }
@@ -54,6 +74,14 @@ export class MenuComponent implements OnInit {
 
   getMissing(): number {
     return this.stickers.filter((item) => item.qtde === 0).length;
+  }
+
+  getMissingList(): ISticker[] {
+    return this.stickers.filter((item) => item.qtde === 0);
+  }
+
+  getCollectedList(): ISticker[] {
+    return this.stickers.filter((item) => item.qtde > 0);
   }
 
   getCollected(): number {
@@ -68,7 +96,15 @@ export class MenuComponent implements OnInit {
     return 100 - this.getCollectPercent();
   }
 
-  getRepeated(): ISticker[] {
+  getStickersCollected(): ISticker[] {
+    return this.collected = this.getCollectedList();
+  }
+
+  getStickersMissing(): ISticker[] {
+    return this.missing = this.getMissingList();
+  }
+
+  getStickerRepeated(): ISticker[] {
     return this.repeated = this.stickers.filter((item) => item.qtde > 1);
   }
 
@@ -85,12 +121,20 @@ export class MenuComponent implements OnInit {
     return stickers.reduce((acc, obj) => acc + obj.qtde, 0);
   }
 
+  clearTemporary(): void {
+    this.collected = [];
+    this.repeated = [];
+    this.missing = this.stickers;
+  }
+
   updateStickers(): void {
     this.getMissing();
     this.getCollected();
     this.getCollectPercent();
     this.getMissingPercent();
-    this.getRepeated();
+    this.getStickerRepeated();
+    this.getStickersCollected();
+    this.getStickersMissing();
     this.getRepeatedTotal();
     this.localStorageService.set(KeyType.DATA, this.sections);
   }
@@ -98,8 +142,8 @@ export class MenuComponent implements OnInit {
   confirmReset(): void {
     this.resetEvent.emit();
     this.sections = SECTIONS;
+    this.clearTemporary();
     this.updateStickers();
-    this.repeated = [];
 
     this.notificationService.showModal(
       'Sucesso!',

@@ -1,18 +1,88 @@
 <div class="menu" *ngIf="stickers">
+  <p class="disclaimer">Clique nas seções abaixo para visualizar as suas figurinhas colecionadas e faltantes.</p>
   <mat-tab-group>
     <mat-tab label="Coleção">
-      <div class="dashboard">
-        <div class="group">
-          <p class="label">Colecionadas - {{ getCollectPercent() | number : '1.2-2' }}%</p>
-          <p class="sticker">{{ getCollected() }} de {{ stickers.length }} figurinhas</p>
-          <mat-progress-bar mode="determinate" [value]="getCollectPercent()"></mat-progress-bar>
-        </div>
+      <div class="dashboard expansion">
 
-        <div class="group">
-          <p class="label">Faltantes - {{ getMissingPercent() | number : '1.2-2' }}%</p>
-          <p class="sticker">{{ getMissing() }} de {{ stickers.length }} figurinhas</p>
-          <mat-progress-bar mode="determinate" [value]="getMissingPercent()"></mat-progress-bar>
-        </div>
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header>
+            <div class="group">
+              <p class="label">Colecionadas - {{ getCollectPercent() | number : '1.2-2' }}%</p>
+              <p class="sticker">{{ getCollected() }} de {{ stickers.length }} figurinhas</p>
+              <mat-progress-bar mode="determinate" [value]="getCollectPercent()"></mat-progress-bar>
+            </div>
+          </mat-expansion-panel-header>
+
+          <div class="core">
+            <div class="text">
+              <p>Digite o código da figurinha colecionada para pesquisar.</p>
+            </div>
+    
+            <div class="input">
+              <i class="fa fa-search mr-3"></i>
+    
+              <app-input 
+                type="text" 
+                [isSearch]="true" 
+                [required]="false" 
+                control="collected" 
+                [form]="collectedForm" 
+                label="ID da figurinha"
+                placeholder="Pesquisar figurinha...">
+              </app-input>
+            </div>
+          </div>
+          
+          <div *ngIf="collected.length" class="row total">
+            <ng-container *ngFor="let sticker of collected">
+              <app-sticker 
+                [@appeard]="state"
+                [sticker]="sticker" 
+                (toggleEvent)="updateStickers()">
+              </app-sticker>
+            </ng-container>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header>
+            <div class="group">
+              <p class="label">Faltantes - {{ getMissingPercent() | number : '1.2-2' }}%</p>
+              <p class="sticker">{{ getMissing() }} de {{ stickers.length }} figurinhas</p>
+              <mat-progress-bar mode="determinate" [value]="getMissingPercent()"></mat-progress-bar>
+            </div>
+          </mat-expansion-panel-header>
+
+          <div class="core">
+            <div class="text">
+              <p>Digite o código da figurinha faltante para pesquisar.</p>
+            </div>
+    
+            <div class="input">
+              <i class="fa fa-search mr-3"></i>
+    
+              <app-input 
+                type="text" 
+                control="missing" 
+                [isSearch]="true" 
+                [required]="false" 
+                [form]="missingForm" 
+                label="ID da figurinha"
+                placeholder="Pesquisar figurinha...">
+              </app-input>
+            </div>
+          </div>
+
+          <div *ngIf="missing.length" class="row total">
+            <ng-container *ngFor="let sticker of missing">
+              <app-sticker 
+                [@appeard]="state"
+                [sticker]="sticker" 
+                (toggleEvent)="updateStickers()">
+              </app-sticker>
+            </ng-container>
+          </div>
+        </mat-expansion-panel>
 
         <div class="status">
           <div class="group group-status mr-5">
@@ -54,11 +124,11 @@
 
           <app-input 
             type="text" 
+            control="repeated" 
             [isSearch]="true" 
             [required]="false" 
-            [form]="stickerForm" 
+            [form]="repeatedForm" 
             label="ID da figurinha"
-            control="stickerControl" 
             placeholder="Pesquisar figurinha...">
           </app-input>
         </div>
