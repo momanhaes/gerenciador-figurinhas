@@ -15,27 +15,27 @@
         </div>
 
         <div class="status">
-          <div class="group group-status mr-3">
+          <div class="group group-status mr-5">
             <p class="label">Valor por pacotinho</p>
-            <p class="sticker">R$4,00</p>
+            <p class="sticker">R$ 4,00</p>
           </div>
 
-          <div class="group group-status mr-3">
+          <div class="group group-status mr-5">
             <p class="label">Valor por figurinha</p>
-            <p class="sticker">R$0,80</p>
+            <p class="sticker">R$ 0,80</p>
           </div>
 
-          <div class="group group-status mr-3">
+          <div class="group group-status mr-5">
             <p class="label">Total de figurinhas</p>
             <p class="sticker">{{ getTotal() }}</p>
           </div>
           
-          <div class="group group-status mr-3">
+          <div class="group group-status mr-5">
             <p class="label">Total de pacotinhos</p>
             <p class="sticker">{{ (getTotal() / 5) }}</p>
           </div>
 
-          <div class="group group-status mr-3">
+          <div class="group group-status mr-5">
             <p class="label">Total gasto</p>
             <p class="sticker">{{ (getTotal() * (0.8)) | currency:'BRL':true:'1.2-2' }}</p>
           </div>
@@ -82,11 +82,12 @@
         </div>
 
         <div class="button">
-          <app-button 
-          (click)="resetData()"
-          icon="fa fa-undo mr-2" 
-          label="Redefinir progresso">
-          </app-button>
+          <button 
+            mat-button 
+            (click)="resetData()">
+            <i class="fa fa-undo mr-2"></i> 
+            Redefinir progresso
+          </button>
         </div>
       </div>
     </mat-tab>

@@ -1,0 +1,39 @@
+@import "/src/app/scss/includes.scss";
+
+.dialog {
+  text-align: center;
+
+  .title {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .content {
+    @include between;
+  }
+
+  mat-slider {
+    width: 85%;
+  }
+
+  button {
+    width: 10%;
+    margin-left: 5%;
+    margin-bottom: 1rem;
+    color: $color-primary !important;
+  }
+}
+
+::ng-deep {
+  .mat-slider-thumb {
+    background-color: $color-primary !important;
+  }
+
+  .mat-slider-thumb-label {
+    background-color: $color-primary !important;
+  }
+
+  .mat-slider-track-fill {
+    background-color: $color-primary !important;
+  }
+}

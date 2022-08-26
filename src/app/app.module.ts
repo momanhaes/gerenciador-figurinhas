@@ -15,15 +15,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // ANGULAR //
 
 // MATERIAL //
-import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
-import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatInputModule } from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
-import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSliderModule } from '@angular/material/slider';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
@@ -41,6 +40,7 @@ import { SnackbarComponent } from './components/snackbar/snackbar.component';
 
 // FRAGMENTS //
 import { MenuComponent } from './fragments/menu/menu.component';
+import { DialogComponent } from './fragments/dialog/dialog.component';
 import { HeaderComponent } from './fragments/header/header.component';
 import { FooterComponent } from './fragments/footer/footer.component';
 import { ProfileComponent } from './fragments/profile/profile.component';
@@ -92,6 +92,7 @@ const DECLARATIONS = [
   FooterComponent,
   ButtonComponent,
   ResizeDirective,
+  DialogComponent,
   StickerComponent,
   SpinnerComponent,
   ProfileComponent,
@@ -106,6 +107,7 @@ const DECLARATIONS = [
 const ANGULAR_MODULES = [
   FormsModule,
   BrowserModule,
+  MatDialogModule,
   HttpClientModule,
   ReactiveFormsModule,
   BrowserAnimationsModule,
@@ -114,14 +116,12 @@ const ANGULAR_MODULES = [
 
 const MATERIAL_MODULES = [
   MatIconModule,
-  MatMenuModule,
   MatTabsModule,
-  MatCardModule,
   MatInputModule,
   MatBadgeModule,
   MatSelectModule,
   MatButtonModule,
-  MatTooltipModule,
+  MatSliderModule,
   MatDividerModule,
   MatExpansionModule,
   MatProgressBarModule,

@@ -111,6 +111,12 @@
 // ANGULAR MATERIAL //
 
 ::ng-deep {
+  .mat-button {
+    font-size: 1rem;
+    color: $color-primary;
+    font-family: $font-montserrat;
+  }
+
   .mat-tab-label {
     color: $color-text;
     opacity: 1 !important;

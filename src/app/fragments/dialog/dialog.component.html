@@ -1,0 +1,18 @@
+<div class="dialog">
+  <div class="title">Arraste para definir a quantidade e <br> clique no ícone ao lado para confirmar</div>
+
+  <div class="content">
+    <mat-slider 
+    min="0" 
+    max="10" 
+    step="1" 
+    thumbLabel 
+    [value]="data.qtde" 
+    (input)="getValue($event.value)">
+  </mat-slider>
+
+  <button mat-icon-button (click)="apply()">
+    <mat-icon>check</mat-icon>
+  </button>
+  </div>
+</div>

@@ -1,6 +1,6 @@
 <div 
   class="sticker-id" 
-  (click)="toggleSticker()" 
+  (click)="toggleSticker(sticker)" 
   [matBadge]="getBadge(sticker.qtde)" 
   [class.active]="isActive(sticker.qtde)">
 

@@ -2,6 +2,7 @@ import { KeyType, LocalStorageService } from 'src/app/services/local-storage.ser
 import { ISection, ISticker } from 'src/app/components/sticker/sticker.interface';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { NotificationService } from 'src/app/services/notification.service';
+import { SECTIONS } from 'src/app/components/sticker/stickers.data';
 import { SectionService } from 'src/app/services/section.service';
 import { APPEARD } from 'src/app/animations/appeard.animation';
 import { FormControl, FormGroup } from '@angular/forms';
@@ -96,6 +97,7 @@ export class MenuComponent implements OnInit {
 
   confirmReset(): void {
     this.resetEvent.emit();
+    this.sections = SECTIONS;
     this.updateStickers();
     this.repeated = [];
 
