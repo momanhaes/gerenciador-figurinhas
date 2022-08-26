@@ -6,6 +6,10 @@ export const SECTIONS: ISection[] = [
     icon: 'fa fa-star mr-2',
     stickers: [
       {
+        code: '00',
+        qtde: 0,
+      },
+      {
         code: 'FWC1',
         qtde: 0,
       },
@@ -75,10 +79,6 @@ export const SECTIONS: ISection[] = [
       },
       {
         code: 'FWC18',
-        qtde: 0,
-      },
-      {
-        code: 'FWC19',
         qtde: 0,
       },
     ],
