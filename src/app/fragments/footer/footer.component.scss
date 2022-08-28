@@ -10,13 +10,27 @@
     .content {
       @include center;
       font-size: 12px;
+      margin-top: 3px;
 
       @include large-and-up {
         font-size: 16px;
+        margin-top: 10px;
       }
 
       span {
         margin: 0 4px 0 4px;
+      }
+
+      a {
+        margin-left: 7px;
+
+        @include large-and-up {
+          margin-left: 5px;
+
+          &:hover {
+            margin-left: 12px;
+          }
+        }
       }
     }
   }
