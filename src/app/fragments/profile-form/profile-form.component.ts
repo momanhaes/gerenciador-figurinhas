@@ -30,7 +30,7 @@ export class ProfileFormComponent implements OnInit {
   constructor(private windowService: WindowService, private notificationService: NotificationService) { }
 
   ngOnInit() {
-    this.subscribeMobile = this.windowService.hasMobile.subscribe((hasMobile: boolean) => (this.isMobile = hasMobile));
+    this.subscribeMobile = this.windowService.isMobile.subscribe((isMobile: boolean) => (this.isMobile = isMobile));
     this.profileForm.valueChanges.subscribe(() => this.validateIsEqual());
     this.validateIsEqual();
   }

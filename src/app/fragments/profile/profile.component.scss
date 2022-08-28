@@ -21,7 +21,7 @@
   }
 
   img {
-    width: 15%;
+    width: 20%;
     transition: transform 0.1s;
     transform: scale(1);
 
@@ -32,7 +32,7 @@
     }
 
     @include large-and-down {
-      width: 50%;
+      width: 60%;
     }
   }
 }

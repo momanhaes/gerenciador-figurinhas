@@ -24,7 +24,7 @@ export class LoginFormComponent implements OnInit {
   constructor(private windowService: WindowService) { this.isMobile = window.innerWidth <= windowService.widthMobile; }
 
   ngOnInit() {
-    this.subscribeMobile = this.windowService.hasMobile.subscribe((hasMobile: boolean) => (this.isMobile = hasMobile));
+    this.subscribeMobile = this.windowService.isMobile.subscribe((isMobile: boolean) => (this.isMobile = isMobile));
     this.logoClass = 'fa fa-sticky-note-o fa-flip-horizontal mr-2';
   }
 

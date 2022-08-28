@@ -10,7 +10,7 @@ export class ResizeDirective {
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     const width = event.target.innerWidth;
-    this.win.hasMobile.emit(width <= this.win.widthMobile);
+    this.win.isMobile.emit(width <= this.win.widthMobile);
   }
 }
  

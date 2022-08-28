@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
   ) { this.isMobile = window.innerWidth <= windowService.widthMobile; }
 
   ngOnInit(): void {
-    this.subscribeMobile = this.windowService.hasMobile.subscribe((hasMobile: boolean) => (this.isMobile = hasMobile));
+    this.subscribeMobile = this.windowService.isMobile.subscribe((isMobile: boolean) => (this.isMobile = isMobile));
 
     this.loginForm = new FormGroup({
       email: new FormControl('', [Validators.required, Validators.pattern(EMAIL_PATTERN)]),

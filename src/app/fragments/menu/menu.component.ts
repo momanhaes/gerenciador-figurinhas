@@ -123,8 +123,14 @@ export class MenuComponent implements OnInit {
 
   clearTemporary(): void {
     this.collected = [];
-    this.repeated = [];
+    this.missing = [];
     this.missing = this.stickers;
+  }
+
+  clearForms(): void {
+    this.collectedForm.reset({ collected: '' });
+    this.missingForm.reset({ missing: '' });
+    this.repeatedForm.reset({ repeated: '' });
   }
 
   updateStickers(): void {
@@ -136,6 +142,7 @@ export class MenuComponent implements OnInit {
     this.getStickersCollected();
     this.getStickersMissing();
     this.getRepeatedTotal();
+    this.clearForms();
     this.localStorageService.set(KeyType.DATA, this.sections);
   }
 

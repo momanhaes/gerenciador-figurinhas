@@ -35,7 +35,7 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.subscribeMobile = this.windowService.hasMobile.subscribe((hasMobile: boolean) => (this.isMobile = hasMobile));
+    this.subscribeMobile = this.windowService.isMobile.subscribe((isMobile: boolean) => (this.isMobile = isMobile));
     this.class = 'fa fa-sticky-note-o fa-flip-horizontal mr-2';
   }
 

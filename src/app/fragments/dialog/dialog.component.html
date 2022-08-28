@@ -1,5 +1,5 @@
 <div class="dialog">
-  <div class="title">Arraste para definir a quantidade e <br> clique no ícone ao lado para confirmar</div>
+  <div class="title" [innerHtml]="title"></div>
 
   <div class="content">
     <mat-slider 
@@ -14,5 +14,9 @@
   <button mat-icon-button (click)="apply()">
     <mat-icon>check</mat-icon>
   </button>
+  </div>
+
+  <div class="details">
+    <p>Alterando a quantidade da figurinha: '<strong>{{ data.code }}</strong>'</p>
   </div>
 </div>

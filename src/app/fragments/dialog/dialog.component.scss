@@ -12,6 +12,10 @@
     @include between;
   }
 
+  .details {
+    margin-top: 1rem;
+  }
+
   mat-slider {
     width: 85%;
   }

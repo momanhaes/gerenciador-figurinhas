@@ -5,8 +5,7 @@
 
   .container {
     @include grid-column-span(32);
-    margin-bottom: 32px;
-    margin-top: 32px;
+    margin-bottom: 2rem;
 
     .content {
       @include center;
