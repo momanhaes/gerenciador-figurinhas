@@ -1,7 +1,7 @@
 export enum SectionType {
   ESPECIAIS = 'Especiais e mais',
   PAISES = 'Países',
-  TEMPO = 'Linha do tempo'
+  TEMPO = 'Linha do tempo',
 }
 
 export interface ICountry {
@@ -21,6 +21,8 @@ export interface IGroup {
 }
 
 export interface ISection {
+  externalCode: string;
+  userID: string;
   name: string;
   icon?: string;
   group?: IGroup[];
